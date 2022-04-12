@@ -133,7 +133,7 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">/ro/despre/cariere</stringProp>
+            <stringProp name="HTTPSampler.path">/about/careers</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -143,14 +143,50 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
             <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            <stringProp name="TestPlan.comments">Created from cURL on 2022-03-22T15:28:16.3621549</stringProp>
+            <stringProp name="TestPlan.comments">Created from cURL on 2022-04-12T16:15:02.6769044</stringProp>
           </HTTPSamplerProxy>
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP HeaderManager" enabled="true">
               <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</stringProp>
+                </elementProp>
+                <elementProp name="Accept-Language" elementType="Header">
+                  <stringProp name="Header.name">Accept-Language</stringProp>
+                  <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
+                </elementProp>
                 <elementProp name="Cache-Control" elementType="Header">
                   <stringProp name="Header.name">Cache-Control</stringProp>
                   <stringProp name="Header.value">max-age=0</stringProp>
+                </elementProp>
+                <elementProp name="Referer" elementType="Header">
+                  <stringProp name="Header.name">Referer</stringProp>
+                  <stringProp name="Header.value">https://www.exesoftware.ro/about/careers</stringProp>
+                </elementProp>
+                <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                  <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                  <stringProp name="Header.value">document</stringProp>
+                </elementProp>
+                <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                  <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                  <stringProp name="Header.value">navigate</stringProp>
+                </elementProp>
+                <elementProp name="Sec-Fetch-Site" elementType="Header">
+                  <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                  <stringProp name="Header.value">same-origin</stringProp>
+                </elementProp>
+                <elementProp name="Sec-Fetch-User" elementType="Header">
+                  <stringProp name="Header.name">Sec-Fetch-User</stringProp>
+                  <stringProp name="Header.value">?1</stringProp>
+                </elementProp>
+                <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                  <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                  <stringProp name="Header.value">1</stringProp>
+                </elementProp>
+                <elementProp name="User-Agent" elementType="Header">
+                  <stringProp name="Header.name">User-Agent</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36</stringProp>
                 </elementProp>
                 <elementProp name="sec-ch-ua" elementType="Header">
                   <stringProp name="Header.name">sec-ch-ua</stringProp>
@@ -164,54 +200,18 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
                   <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
                   <stringProp name="Header.value">^\^Windows^\^</stringProp>
                 </elementProp>
-                <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
-                  <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
-                  <stringProp name="Header.value">1</stringProp>
-                </elementProp>
-                <elementProp name="User-Agent" elementType="Header">
-                  <stringProp name="Header.name">User-Agent</stringProp>
-                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-Site" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                  <stringProp name="Header.value">same-origin</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                  <stringProp name="Header.value">navigate</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-User" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-User</stringProp>
-                  <stringProp name="Header.value">?1</stringProp>
-                </elementProp>
-                <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                  <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
-                  <stringProp name="Header.value">document</stringProp>
-                </elementProp>
-                <elementProp name="Referer" elementType="Header">
-                  <stringProp name="Header.name">Referer</stringProp>
-                  <stringProp name="Header.value">https://www.exesoftware.ro/ro/jobs/net-developer</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Language" elementType="Header">
-                  <stringProp name="Header.name">Accept-Language</stringProp>
-                  <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
-                </elementProp>
                 <elementProp name="Accept-Encoding" elementType="Header">
                   <stringProp name="Header.name">Accept-Encoding</stringProp>
                   <stringProp name="Header.value">gzip, deflate</stringProp>
                 </elementProp>
               </collectionProp>
-              <stringProp name="TestPlan.comments">Created from cURL on 2022-03-22T15:28:16.3746761</stringProp>
+              <stringProp name="TestPlan.comments">Created from cURL on 2022-04-12T16:15:02.6788995</stringProp>
             </HeaderManager>
             <hashTree/>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="title" enabled="true">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">title</stringProp>
-              <stringProp name="RegexExtractor.regex">&lt;div class=&quot;t-entry&quot;&gt;&lt;h4 class=&quot;t-entry-title font-762333 h5&quot;&gt;&lt;a href=&quot;(.*)&quot; target=&quot;_self&quot;&gt;(.*)&lt;\/a&gt;</stringProp>
+              <stringProp name="RegexExtractor.regex">&lt;div class=&quot;t-entry-text-tc single-block-padding&quot;&gt;&lt;div class=&quot;t-entry&quot;&gt;&lt;h6 class=&quot;t-entry-title h6&quot;&gt;&lt;a href=&quot;(.*)&quot; target=&quot;_self&quot;&gt;(.*)&lt;\/a&gt;&lt;\/h6&gt;&lt;p&gt;\n+(.*)</stringProp>
               <stringProp name="RegexExtractor.template">$2$</stringProp>
               <stringProp name="RegexExtractor.default"></stringProp>
               <stringProp name="RegexExtractor.match_number">-1</stringProp>
@@ -220,7 +220,7 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="link" enabled="true">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">link</stringProp>
-              <stringProp name="RegexExtractor.regex">&lt;div class=&quot;t-entry&quot;&gt;&lt;h4 class=&quot;t-entry-title font-762333 h5&quot;&gt;&lt;a href=&quot;(.*)&quot; target=&quot;_self&quot;&gt;(.*)&lt;\/a&gt;</stringProp>
+              <stringProp name="RegexExtractor.regex">&lt;div class=&quot;t-entry-text-tc single-block-padding&quot;&gt;&lt;div class=&quot;t-entry&quot;&gt;&lt;h6 class=&quot;t-entry-title h6&quot;&gt;&lt;a href=&quot;(.*)&quot; target=&quot;_self&quot;&gt;(.*)&lt;\/a&gt;&lt;\/h6&gt;&lt;p&gt;\n+(.*)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default"></stringProp>
               <stringProp name="RegexExtractor.match_number">-1</stringProp>
