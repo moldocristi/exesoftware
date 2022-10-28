@@ -20,7 +20,7 @@
           </elementProp>
           <elementProp name="city" elementType="Argument">
             <stringProp name="Argument.name">city</stringProp>
-            <stringProp name="Argument.value">remote</stringProp>
+            <stringProp name="Argument.value">Remote</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -229,7 +229,7 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="title" enabled="true">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">title</stringProp>
-              <stringProp name="RegexExtractor.regex">&lt;div class=&quot;t-entry-text-tc single-block-padding&quot;&gt;&lt;div class=&quot;t-entry&quot;&gt;&lt;h6 class=&quot;t-entry-title h6&quot;&gt;&lt;a href=&quot;(.*)&quot; target=&quot;_self&quot;&gt;(.*)&lt;\/a&gt;&lt;\/h6&gt;&lt;p&gt;\n+(.*)</stringProp>
+              <stringProp name="RegexExtractor.regex">&lt;a href=&quot;(.*)&quot; target=&quot;_self&quot;&gt;(.*)&lt;\/a&gt;&lt;\/h6&gt;&lt;p&gt;</stringProp>
               <stringProp name="RegexExtractor.template">$2$</stringProp>
               <stringProp name="RegexExtractor.default"></stringProp>
               <stringProp name="RegexExtractor.match_number">-1</stringProp>
@@ -238,7 +238,7 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="link" enabled="true">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">link</stringProp>
-              <stringProp name="RegexExtractor.regex">&lt;div class=&quot;t-entry-text-tc single-block-padding&quot;&gt;&lt;div class=&quot;t-entry&quot;&gt;&lt;h6 class=&quot;t-entry-title h6&quot;&gt;&lt;a href=&quot;(.*)&quot; target=&quot;_self&quot;&gt;(.*)&lt;\/a&gt;&lt;\/h6&gt;&lt;p&gt;\n+(.*)</stringProp>
+              <stringProp name="RegexExtractor.regex">&lt;a href=&quot;(.*)&quot; target=&quot;_self&quot;&gt;(.*)&lt;\/a&gt;&lt;\/h6&gt;&lt;p&gt;</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default"></stringProp>
               <stringProp name="RegexExtractor.match_number">-1</stringProp>
